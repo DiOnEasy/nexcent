@@ -9,6 +9,9 @@
         padding-left: 5vw;
         padding-right: 5vw;
     }
+    .header__person img {
+    left: -220px;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -114,6 +117,49 @@
         width: 500px;
         bottom: 161px;
 
+    }
+    .links__opened {
+        background: #012362;
+        width: 40%;
+        height: calc(100vh - 140px);
+        position: absolute;
+        z-index: 999;
+        top: -20px;
+        right: -5vw;
+        padding: 20px 5vw 120px;
+        display: flex;
+        transition-duration: .5s;
+
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header__links {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 14px;
+        display: none;
+    }
+
+    .header__nav {
+        justify-content: space-between;
+    }
+
+    .header__nav .modal__button {
+        display: none;
+    }
+
+    .header__nav-links {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -269,58 +315,16 @@
     }
 
 
-    .links__opened {
-        background: #012362;
-        width: 40%;
-        height: calc(100vh - 140px);
-        position: absolute;
-        z-index: 999;
-        top: -20px;
-        right: -5vw;
-        padding: 20px 5vw 120px;
-        display: flex;
-        transition-duration: .5s;
-
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .header__links {
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: 14px;
-        display: none;
-    }
-
-    .header__nav {
-        justify-content: space-between;
-    }
-
-    .header__nav .modal__button {
-        display: none;
-    }
-
-    .header__nav-links {
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        z-index: 999;
-    }
-
-    body {
-        overflow-x: hidden;
-    }
-}
-
-@media (max-width: 768px) {
-
     .header__person img {
         left: auto;
         right: -200px;
         width: 600px;
     }
+}
+
+@media (max-width: 768px) {
+
+   
 
     .links__opened {
         width: 90vw;

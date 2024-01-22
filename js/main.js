@@ -12,6 +12,10 @@ document.querySelectorAll(".modal__button").forEach((button) => {
   button.onclick = () => openModal();
 });
 
+document.querySelector('body').addEventListener('mouseleave', function(event) {
+  openModal()
+});
+
 function openModal() {
   overlay.classList.remove("none");
   registrationForm.classList.remove("none");
@@ -82,7 +86,7 @@ document
 burger.onclick = () => openMobileMenu();
 
 function openMobileMenu() {
-  if (window.innerWidth <= 1024) {
+  if (window.innerWidth <= 1280) {
     document
       .querySelector(".header__nav-links")
       .classList.toggle("links__opened");
