@@ -1,0 +1,384 @@
+@media (max-width: 1600px) {
+
+    .header,
+    .about,
+    .start,
+    .gifts,
+    .reviews,
+    .registration {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header__person img {
+        left: -365px;
+    }
+
+    .header__links {
+        margin-right: 1.5vw;
+    }
+
+    .start__photo-person {
+        right: 0vw;
+    }
+
+    .start__photo div {
+        right: 28.76vw;
+    }
+
+    .about__text {
+        max-width: 40.45vw;
+        margin-bottom: 100px;
+    }
+
+    .about__photo-5 {
+        top: -75px;
+        right: 320px;
+    }
+
+    .about__photo-6 {
+
+        right: 100px;
+        top: -20px;
+    }
+
+    .shares__img {
+        gap: 18px;
+        overflow-x: scroll;
+    }
+
+    .shares__img::-webkit-scrollbar {
+        display: none;
+    }
+
+    .shares__img {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
+
+@media (max-width: 1280px) {
+    .registration__photos div:nth-child(2) {
+
+        right: -35px;
+    }
+
+    .registration__photos div:nth-child(1) {
+        right: 215px;
+    }
+
+    .header__title {
+        font-size: 42px;
+        line-height: 51px;
+    }
+
+    .header__text {
+        margin: 12px 0;
+    }
+
+    .modal__button button {
+        font-size: 16px;
+    }
+
+    .header__logo {
+        margin-right: 2vw;
+    }
+
+    .start__photo div {
+        right: 23vw;
+        top: 83px;
+
+    }
+
+    .about__photo-1 {
+        width: 480px;
+    }
+
+    .about__photo-4 {
+        right: 300px;
+    }
+
+    .about__photo-6 {
+        right: 70px;
+    }
+
+    .about__photo-5 {
+        right: 270px;
+    }
+
+    .start__photo-person {
+        width: 500px;
+        bottom: 161px;
+
+    }
+}
+
+@media (max-width: 1024px) {
+    .gifts__advantages {
+        justify-content: flex-end;
+    }
+
+    .gifts__item {
+        padding: 20px;
+
+    }
+
+    .gifts__item p:nth-child(1) {
+        width: 250px;
+        line-height: 50px;
+        margin-bottom: 6px;
+        font-size: 42px;
+    }
+
+    .gifts__header {
+        font-size: 24px;
+    }
+
+    .gifts__text {
+
+        font-size: 18px;
+    }
+
+    .gifts__item p:nth-child(1) span {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .start__bg img {
+        width: 100%;
+    }
+
+    .header__person img {
+        width: 800px;
+        left: -280px;
+    }
+
+    .start__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .start__photo {
+        display: none;
+    }
+
+    .about__content-item {
+        flex-direction: column;
+
+    }
+
+    .about__content-item:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .about__text {
+        max-width: 100%;
+    }
+
+    .about__photos {
+        height: 200px;
+    }
+
+    .about__text {
+        margin-bottom: 50px;
+    }
+
+    .about__photos {
+        height: 300px;
+    }
+
+    .about__photo-1 {
+        position: static;
+        width: 100%;
+    }
+
+    .about__text {
+        margin-bottom: 0;
+    }
+
+    .about__photos:nth-child(2) {
+        padding: 15px 0;
+        margin: 0 auto;
+    }
+
+    /* .about__photo-5 {
+        width: 28.364vw;
+        top: 10px;
+        right: 50vw;
+    }
+
+    .about__photo-6 {
+        top: 35px;
+        right: 35vw;
+        width: 25vw;
+    } */
+
+    /* .about__photo-4 {
+        top: auto;
+        bottom: -39px;
+        right: 482px;
+
+    }
+
+    .about__photo-3 {
+        top: -16px;
+        right: 125px;
+    }
+
+    .about__photo-2 {
+        right: 181px;
+        bottom: -48px;
+
+    } */
+    .about__photos:nth-child(1) {
+        margin: 0 auto;
+    }
+
+    .about__photo-6 {
+        position: static;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .about__photo-4,
+    .about__photo-2,
+    .about__photo-3,
+    .about__photo-5 {
+        display: none;
+    }
+
+    .about__photos {
+        height: auto;
+    }
+
+    .registration__photos {
+        display: none;
+    }
+
+    .registration,
+    .registration__time {
+        justify-content: center;
+    }
+
+    .registration__content .registration__form {
+        margin: 0 auto;
+    }
+
+
+    .links__opened {
+        background: #012362;
+        width: 40%;
+        height: calc(100vh - 140px);
+        position: absolute;
+        z-index: 999;
+        top: -20px;
+        right: -5vw;
+        padding: 20px 5vw 120px;
+        display: flex;
+        transition-duration: .5s;
+
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header__links {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 14px;
+        display: none;
+    }
+
+    .header__nav {
+        justify-content: space-between;
+    }
+
+    .header__nav .modal__button {
+        display: none;
+    }
+
+    .header__nav-links {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .header__person img {
+        left: auto;
+        right: -200px;
+        width: 600px;
+    }
+
+    .links__opened {
+        width: 90vw;
+        right: -3vw;
+    }
+
+    .header__links {
+        padding-top: 100px;
+        align-items: center;
+    }
+
+    .gifts__advantages {
+        gap: 12px;
+    }
+
+    .gifts__item p:nth-child(1) {
+        width: auto;
+    }
+
+    .header,
+    .about,
+    .start,
+    .gifts,
+    .reviews,
+    .registration {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .overlay .registration__content, .thanks{
+        max-width: 420px;
+        padding: 40px 40px;
+    }
+    .x {
+     
+        top: 20px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .header__title{
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .about__header p, .start__header p, .shares__header, .reviews__header p, .registration__header p{
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .hours p, .minutes p, .seconds p{
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .colon{
+        font-size: 40px;
+    }
+    .registration__text,.registration__content .registration__form {
+        padding: 0 3vw;
+    }
+}
