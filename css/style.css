@@ -67,7 +67,9 @@ body * {
     position: inherit;
 }
 
-.modal__button button {
+.modal__button a {
+    text-decoration: none;
+    display: inline-block;
     font-size: 20px;
     font-weight: 700;
     line-height: 19px;
@@ -460,8 +462,8 @@ z-index: 2;
 
 }
 
-.gifts .modal__button button,
-.header__content .modal__button button {
+.gifts .modal__button a,
+.header__content .modal__button a {
     padding: 24px 40px;
 }
 
@@ -529,6 +531,16 @@ z-index: 2;
     margin-bottom: 20px;
     gap: 20px;
 
+}
+
+.registration__bonus-text{
+font-size: 20px;
+font-weight: 700;
+line-height: 19px;
+text-align: center;
+color: #0093FF;
+text-transform: uppercase;
+margin-bottom: 20px;
 }
 
 .registration__header p {

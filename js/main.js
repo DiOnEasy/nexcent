@@ -8,13 +8,19 @@ let registrationFirst = document.querySelector(
 );
 let registrationSecond = document.querySelector(".overlay .registration__form");
 let overlay = document.querySelector(".overlay");
-document.querySelectorAll(".modal__button").forEach((button) => {
-  button.onclick = () => openModal();
-});
+// document.querySelectorAll(".modal__button").forEach((button) => {
+//   button.onclick = () => openModal();
+// });
 
 document.querySelector('body').addEventListener('mouseleave', function(event) {
   openModal()
 });
+
+setInterval(() =>{
+  if(window.innerWidth <= 1024){
+    openModal()
+  }
+}, 30000)
 
 function openModal() {
   overlay.classList.remove("none");
